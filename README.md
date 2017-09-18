@@ -4,7 +4,7 @@
 ## 参考URL
 [RNNで来月の航空会社の乗客数を予測する：TFLearnでLSTMからGRUまで実装しよう](https://deepage.net/deep_learning/2016/09/17/tflearn_rnn.html)
 
-## 必要環境
+## チュートリアル 
 ```sh
 git clone https://github.com/tom-ock/ai-learn-2nd-rnn.git
 cd ai-learn-2nd-rnn
