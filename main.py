@@ -43,7 +43,7 @@ def create_dataset(dataset, steps_of_history, steps_in_future):
     return X, Y
 
 # 訓練データとテストデータにデータセットを分割
-def split_data(x, y, test_size=0.1):
+def split_dataset(x, y, test_size=0.1):
     pos = round(len(x) * (1 - test_size))
     trainX, trainY = x[:pos], y[:pos]
     testX, testY   = x[pos:], y[pos:]
@@ -56,7 +56,7 @@ if __name__ == "__main__":
     steps_in_future = 1
     dataset = read_data()
     X, Y = create_dataset(dataset, steps_of_history, steps_in_future)
-    trainX, trainY, testX, testY = split_data(X, Y, 0.33)
+    trainX, trainY, testX, testY = split_dataset(X, Y, 0.33)
     # 実行
     # 入力層
     net = tflearn.input_data(shape=[None, steps_of_history, 1])
