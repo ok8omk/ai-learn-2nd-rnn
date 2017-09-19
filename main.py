@@ -1,3 +1,4 @@
+# coding : UTF-8
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -70,4 +71,5 @@ if __name__ == "__main__":
     # モデルの構築
     model = tflearn.DNN(net, tensorboard_verbose=0)
     # 学習
-    model.fit(trainX, trainY, validation_set=0.1, batch_size=1, n_epoch=150)
+    #model.fit(trainX, trainY, validation_set=0.1, batch_size=1, n_epoch=150)
+    model.fit(trainX, trainY, validation_set=0.1, batch_size=1, n_epoch=5)
