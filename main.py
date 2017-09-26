@@ -1,6 +1,8 @@
 # coding : UTF-8
 import pandas as pd
 import numpy as np
+import matplot
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import tflearn
 
